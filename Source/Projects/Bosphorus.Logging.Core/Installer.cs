@@ -1,18 +1,20 @@
-﻿using Castle.MicroKernel.Registration;
+﻿using Bosphorus.Container.Castle.Registration;
+using Bosphorus.Library.Logging.Core.Logger;
+using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 
 namespace Bosphorus.Library.Logging.Core
 {
-    public class Installer: IWindsorInstaller
+    public class Installer: AbstractWindsorInstaller
     {
-        public void Install(IWindsorContainer container, IConfigurationStore store)
+        protected override void Install(IWindsorContainer container, IConfigurationStore store, FromTypesDescriptor allLoadedTypes)
         {
             container.Register(
-                Classes
-                    .FromAssemblyInDirectory(new AssemblyFilter("."))
+                allLoadedTypes
                     .BasedOn(typeof(ILogger))
-                    .WithServiceAllInterfaces()
+                    .WithService
+                    .AllInterfaces()
             );
         }
     }

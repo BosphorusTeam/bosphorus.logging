@@ -1,6 +1,6 @@
 ﻿using Bosphorus.Dao.Core.Dao;
-using Bosphorus.Dao.Core.Extension;
-using Bosphorus.Library.Logging.Core;
+using Bosphorus.Library.Logging.Core.Logger;
+using Bosphorus.Logging.Model;
 
 namespace Bosphorus.Logging.Database
 {
@@ -15,7 +15,7 @@ namespace Bosphorus.Logging.Database
 
         public void Log<TLogModel>(TLogModel logModel) where TLogModel : ILogModel
         {
-            logDao.SaveOrUpdate(logModel);
+            logDao.Save(logModel);
         }
     }
 }

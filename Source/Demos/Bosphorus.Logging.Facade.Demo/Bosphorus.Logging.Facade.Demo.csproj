@@ -67,23 +67,21 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bosphorus.Dao.Core, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Container.Castle, Version=1.0.5182.35773, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>N:\NuGet\Bosphorus.Dal.1.5.0\Bosphorus.Dao.Core.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Container.Castle.1.0.5182.35773\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Dao.NHibernate, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Dao.Core, Version=2.0.5182.36080, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>N:\NuGet\Bosphorus.Dal.1.5.0\Bosphorus.Dao.NHibernate.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Dao.Core.2.0.5182.36080\lib\net45\Bosphorus.Dao.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Library.Common.Core, Version=1.2.15.1, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Dao.NHibernate, Version=2.0.5182.37091, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Bosphorus.Library.Container.Core, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Bosphorus.Dao.NHibernate.2.0.5182.37091\lib\net45\Bosphorus.Dao.NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Castle.Core.3.2.2\lib\net45\Castle.Core.dll</HintPath>
+      <HintPath>..\..\packages\Castle.Core.3.2.0\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Windsor, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -95,11 +93,11 @@
     </Reference>
     <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Iesi.Collections.3.3.3.4001\lib\Net35\Iesi.Collections.dll</HintPath>
+      <HintPath>..\..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\NHibernate.3.3.3.4001\lib\Net35\NHibernate.dll</HintPath>
+      <HintPath>..\..\packages\NHibernate.3.3.1.4000\lib\Net35\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -121,14 +119,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Common\Bosphorus.Common.csproj">
-      <Project>{BF711907-59D3-4A53-9AE5-C979EDEB400A}</Project>
-      <Name>Bosphorus.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Projects\Bosphorus.Logging.Core.Extension\Bosphorus.Logging.Core.Extension.csproj">
-      <Project>{36B31958-A3B0-41F8-A8FE-2C45D5C5F711}</Project>
-      <Name>Bosphorus.Logging.Core.Extension</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Projects\Bosphorus.Logging.Core\Bosphorus.Logging.Core.csproj">
       <Project>{0E43DB14-987E-415D-8CDD-962C40C5AEA7}</Project>
       <Name>Bosphorus.Logging.Core</Name>
@@ -136,6 +126,10 @@
     <ProjectReference Include="..\..\Projects\Bosphorus.Logging.Database\Bosphorus.Logging.Database.csproj">
       <Project>{4c03e0f8-eeed-4e6d-ae66-e7bef449c703}</Project>
       <Name>Bosphorus.Logging.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\Bosphorus.Logging.Model\Bosphorus.Logging.Model.csproj">
+      <Project>{67E3D2FD-AFE7-4963-B0FE-F5E576C8B286}</Project>
+      <Name>Bosphorus.Logging.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

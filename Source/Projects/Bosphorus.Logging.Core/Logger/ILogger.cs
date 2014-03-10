@@ -1,4 +1,6 @@
-namespace Bosphorus.Library.Logging.Core
+using Bosphorus.Logging.Model;
+
+namespace Bosphorus.Library.Logging.Core.Logger
 {
     public interface ILogger
     {

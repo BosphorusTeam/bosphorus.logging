@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bosphorus.Library.Logging.Core
+namespace Bosphorus.Logging.Model
 {
     public class LogModel: ILogModel
     {

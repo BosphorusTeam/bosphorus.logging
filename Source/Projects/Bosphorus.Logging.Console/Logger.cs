@@ -1,4 +1,5 @@
-using Bosphorus.Library.Logging.Core;
+using Bosphorus.Library.Logging.Core.Logger;
+using Bosphorus.Logging.Model;
 
 namespace Bosphorus.Library.Logging.Console
 {

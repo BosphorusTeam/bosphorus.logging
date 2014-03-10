@@ -1,4 +1,4 @@
-﻿namespace Bosphorus.Library.Logging.Core
+﻿namespace Bosphorus.Logging.Model
 {
     public enum LogLevel
     {

@@ -1,12 +1,11 @@
 using System;
-using Bosphorus.Library.Logging.Core;
-using Castle.MicroKernel.Registration;
-using Castle.Windsor;
-using Castle.Windsor.Installer;
+using Bosphorus.Container.Castle.Facade;
+using Bosphorus.Library.Logging.Core.Logger;
+using Bosphorus.Logging.Model;
 
 namespace Bosphorus.Library.Logging.Facade.Demo
 {
-    public class Program
+    public class Program: IProgram
     {
         private readonly ILogger logger;
 
@@ -15,7 +14,7 @@ namespace Bosphorus.Library.Logging.Facade.Demo
             this.logger = logger;
         }
 
-        private void Run()
+        public void Run(string[] args)
         {
             MyLogModel logModel = new MyLogModel();
             logModel.Level = LogLevel.Warn;
@@ -31,14 +30,7 @@ namespace Bosphorus.Library.Logging.Facade.Demo
 
         static void Main(string[] args)
         {
-            IWindsorContainer container = new WindsorContainer();
-            container.Install(
-                FromAssembly.InDirectory(new AssemblyFilter("."))
-            );
-            container.Register(Component.For<Program>());
-
-            Program program = container.Resolve<Program>();
-            program.Run();
+            WindowsRunner.Run<Program>(args);
         }
     }
 }

@@ -1,41 +1,43 @@
-﻿namespace Bosphorus.Library.Logging.Core.Extension
+﻿using Bosphorus.Logging.Model;
+
+namespace Bosphorus.Library.Logging.Core.Logger
 {
-    public static class Extensions
+    public static partial class LoggerExtension
     {
-        public static void Debug(this ILogger logger, string message)
+        public static void Debug(this ILogger extended, string message)
         {
             LogModel logModel = BuildLogModel(message, LogLevel.Debug);
-            logger.Log(logModel);
+            extended.Log(logModel);
         }
 
-        public static void Error(this ILogger logger, string message)
+        public static void Error(this ILogger extended, string message)
         {
             LogModel logModel = BuildLogModel(message, LogLevel.Error);
-            logger.Log(logModel);
+            extended.Log(logModel);
         }
 
-        public static void Fatal(this ILogger logger, string message)
+        public static void Fatal(this ILogger extended, string message)
         {
             LogModel logModel = BuildLogModel(message, LogLevel.Fatal);
-            logger.Log(logModel);
+            extended.Log(logModel);
         }
 
-        public static void Info(this ILogger logger, string message)
+        public static void Info(this ILogger extended, string message)
         {
             LogModel logModel = BuildLogModel(message, LogLevel.Info);
-            logger.Log(logModel);
+            extended.Log(logModel);
         }
 
-        public static void Log(this ILogger logger, string message)
+        public static void Log(this ILogger extended, string message)
         {
             LogModel logModel = BuildLogModel(message, LogLevel.Null);
-            logger.Log(logModel);
+            extended.Log(logModel);
         }
 
-        public static void Warn(this ILogger logger, string message)
+        public static void Warn(this ILogger extended, string message)
         {
             LogModel logModel = BuildLogModel(message, LogLevel.Warn);
-            logger.Log(logModel);
+            extended.Log(logModel);
         }
 
         private static LogModel BuildLogModel(string message, LogLevel logLevel)

@@ -1,4 +1,5 @@
 ﻿using Bosphorus.Library.Logging.Core;
+using Bosphorus.Logging.Model;
 using FluentNHibernate.Automapping;
 
 namespace Bosphorus.Logging.Database

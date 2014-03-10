@@ -85,6 +85,10 @@
       <Name>Bosphorus.Logging.Core</Name>
       <Private>False</Private>
     </ProjectReference>
+    <ProjectReference Include="..\Bosphorus.Logging.Model\Bosphorus.Logging.Model.csproj">
+      <Project>{67E3D2FD-AFE7-4963-B0FE-F5E576C8B286}</Project>
+      <Name>Bosphorus.Logging.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

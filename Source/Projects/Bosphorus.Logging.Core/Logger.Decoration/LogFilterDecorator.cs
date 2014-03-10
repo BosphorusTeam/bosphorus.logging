@@ -1,11 +1,13 @@
-namespace Bosphorus.Library.Logging.Core.Extension
+using Bosphorus.Logging.Model;
+
+namespace Bosphorus.Library.Logging.Core.Logger.Decoration
 {
-    public class LogSelectionDecorator : ILogger
+    class LogFilterDecorator : ILogger
     {
         private readonly ILogger decorated;
         private readonly ILogFilter logFilter;
 
-        public LogSelectionDecorator(ILogger decorated, ILogFilter logFilter)
+        public LogFilterDecorator(ILogger decorated, ILogFilter logFilter)
         {
             this.decorated = decorated;
             this.logFilter = logFilter;

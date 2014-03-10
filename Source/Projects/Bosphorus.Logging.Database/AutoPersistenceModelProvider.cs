@@ -1,22 +1,16 @@
-﻿using System.Reflection;
-using Bosphorus.Common;
-using Bosphorus.Dao.NHibernate.Session.Factory.Builder;
+﻿using System.Collections.Generic;
+using System.Reflection;
+using Bosphorus.Dao.NHibernate.Session.Provider.Factory;
+using Castle.Core.Internal;
 using FluentNHibernate.Automapping;
 
 namespace Bosphorus.Logging.Database
 {
-    public class AutoPersistenceModelProvider : IAutoPersistenceModelProvider
+    public class AutoPersistenceModelProvider : AbstractAutoPersistenceModelProvider
     {
-        private readonly AssemblyRepository assemblyRepository;
-
-        public AutoPersistenceModelProvider(AssemblyRepository assemblyRepository)
+        protected override AutoPersistenceModel GetAutoPersistenceModelInternal(IAssemblyProvider assemblyProvider)
         {
-            this.assemblyRepository = assemblyRepository;
-        }
-
-        public AutoPersistenceModel GetAutoPersistenceModel()
-        {
-            Assembly[] assemblies = assemblyRepository.GetAssemblies();
+            IEnumerable<Assembly> assemblies = assemblyProvider.GetAssemblies();
             AutoPersistenceModel autoPersistenceModel = AutoMap.Assemblies(new AutoMappingConfiguration(), assemblies);
             return autoPersistenceModel;
         }

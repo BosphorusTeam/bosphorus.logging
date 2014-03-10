@@ -16,6 +16,7 @@ namespace Bosphorus.Logging.Database
 
         public override string GetComponentColumnPrefix(FluentNHibernate.Member member)
         {
+            string componentColumnPrefix = base.GetComponentColumnPrefix(member);
             return member.Name;
         }
 

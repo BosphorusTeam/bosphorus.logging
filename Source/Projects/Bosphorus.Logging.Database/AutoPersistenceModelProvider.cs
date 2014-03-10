@@ -8,7 +8,7 @@ namespace Bosphorus.Logging.Database
 {
     public class AutoPersistenceModelProvider : AbstractAutoPersistenceModelProvider
     {
-        protected override AutoPersistenceModel GetAutoPersistenceModelInternal(IAssemblyProvider assemblyProvider)
+        public override AutoPersistenceModel GetAutoPersistenceModel(IAssemblyProvider assemblyProvider)
         {
             IEnumerable<Assembly> assemblies = assemblyProvider.GetAssemblies();
             AutoPersistenceModel autoPersistenceModel = AutoMap.Assemblies(new AutoMappingConfiguration(), assemblies);

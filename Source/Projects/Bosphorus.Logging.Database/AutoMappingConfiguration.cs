@@ -1,5 +1,4 @@
-﻿using Bosphorus.Library.Logging.Core;
-using Bosphorus.Logging.Model;
+﻿using Bosphorus.Logging.Model;
 using FluentNHibernate.Automapping;
 
 namespace Bosphorus.Logging.Database
@@ -16,7 +15,6 @@ namespace Bosphorus.Logging.Database
 
         public override string GetComponentColumnPrefix(FluentNHibernate.Member member)
         {
-            string componentColumnPrefix = base.GetComponentColumnPrefix(member);
             return member.Name;
         }
 

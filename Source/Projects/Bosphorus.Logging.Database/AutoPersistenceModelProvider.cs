@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Reflection;
-using Bosphorus.Dao.NHibernate.Session.Provider.Factory;
+using Bosphorus.Dao.NHibernate.Fluent.AutoPersistenceModelProvider;
 using FluentNHibernate.Automapping;
 
 namespace Bosphorus.Logging.Database

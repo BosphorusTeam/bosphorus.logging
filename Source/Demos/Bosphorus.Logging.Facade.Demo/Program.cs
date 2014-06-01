@@ -30,7 +30,7 @@ namespace Bosphorus.Library.Logging.Facade.Demo
 
         static void Main(string[] args)
         {
-            WindowsRunner.Run<Program>(args);
+            ConsoleRunner.Run<Program>(args);
         }
     }
 }

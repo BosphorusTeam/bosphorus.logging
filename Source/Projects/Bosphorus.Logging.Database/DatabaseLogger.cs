@@ -15,7 +15,7 @@ namespace Bosphorus.Logging.Database
 
         public void Log<TLogModel>(TLogModel logModel) where TLogModel : ILogModel
         {
-            logDao.Save(logModel);
+            logDao.Insert(logModel);
         }
     }
 }

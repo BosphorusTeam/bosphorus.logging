@@ -9,7 +9,8 @@ namespace Bosphorus.Logging.Database
     {
         protected override AutoPersistenceModel GetAutoPersistenceModel(IEnumerable<Assembly> allLoadedAssemblies)
         {
-            AutoPersistenceModel autoPersistenceModel = AutoMap.Assemblies(new AutoMappingConfiguration(), allLoadedAssemblies);
+            IAutomappingConfiguration automappingConfiguration = new AutoMappingConfiguration();
+            AutoPersistenceModel autoPersistenceModel = AutoMap.Assemblies(automappingConfiguration, allLoadedAssemblies);
             return autoPersistenceModel;
         }
     }

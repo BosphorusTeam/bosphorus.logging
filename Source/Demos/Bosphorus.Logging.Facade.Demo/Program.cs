@@ -1,5 +1,5 @@
 using System;
-using Bosphorus.Container.Castle.Facade;
+using Bosphorus.BootStapper.Runner;
 using Bosphorus.Library.Logging.Core.Logger;
 using Bosphorus.Logging.Model;
 

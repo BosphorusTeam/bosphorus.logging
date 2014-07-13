@@ -11,7 +11,7 @@ namespace Bosphorus.Library.Logging.Facade.Demo
             return
                 SQLiteConfiguration
                 .Standard
-                .ConnectionString(@"data source=.\Demo.db3")
+                .UsingFile(@".\Demo.db3")
                 .ShowSql();
         }
     }

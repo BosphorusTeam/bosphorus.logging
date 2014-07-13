@@ -20,7 +20,13 @@ namespace Bosphorus.Logging.Database
 
         public override bool ShouldMap(System.Type type)
         {
-            return typeof (ILogModel).IsAssignableFrom(type);
+            if (!typeof (ILogModel).IsAssignableFrom(type))
+                return false;
+
+            if (typeof (ILogModel) == type)
+                return false;
+
+            return true;
         }
     }
 }

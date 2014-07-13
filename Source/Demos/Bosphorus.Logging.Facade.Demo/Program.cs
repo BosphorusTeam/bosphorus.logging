@@ -1,4 +1,5 @@
 using System;
+using Bosphorus.BootStapper.Program;
 using Bosphorus.BootStapper.Runner;
 using Bosphorus.Library.Logging.Core.Logger;
 using Bosphorus.Logging.Model;

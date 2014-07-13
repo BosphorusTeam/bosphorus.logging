@@ -6,9 +6,9 @@ namespace Bosphorus.Logging.Database
 {
     public class DatabaseLogger: ILogger
     {
-        private readonly IDao<ILogModel> logDao;
+        private readonly IDao logDao;
 
-        public DatabaseLogger(IDao<ILogModel> logDao)
+        public DatabaseLogger(IDao logDao)
         {
             this.logDao = logDao;
         }

@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Bosphorus.Library.Logging.Core")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Bosphorus.Library.Logging.Core")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Bosphorus")]
 [assembly: AssemblyProduct("Bosphorus.Library.Logging.Core")]
 [assembly: AssemblyCopyright("Copyright ©  2009")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("Bosphorus")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 

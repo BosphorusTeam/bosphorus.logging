@@ -1,4 +1,4 @@
-using System;
+using Bosphorus.BootStapper.Common;
 using Bosphorus.BootStapper.Program;
 using Bosphorus.BootStapper.Runner;
 using Bosphorus.Library.Logging.Core.Logger;
@@ -25,13 +25,13 @@ namespace Bosphorus.Library.Logging.Facade.Demo
 
             OperationLog operationLog = new OperationLog();
             operationLog.Level = LogLevel.Info;
-            operationLog.OperationId = Guid.NewGuid();
+            operationLog.OperationId = System.Guid.NewGuid();
             logger.Log(operationLog);
         }
 
         static void Main(string[] args)
         {
-            ConsoleRunner.Run<Program>(args);
+            ConsoleRunner.Run<Program>(Environment.Development, Perspective.Debug, args);
         }
     }
 }

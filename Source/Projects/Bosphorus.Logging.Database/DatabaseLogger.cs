@@ -1,10 +1,11 @@
 ﻿using Bosphorus.Dao.Core.Dao;
-using Bosphorus.Library.Logging.Core.Logger;
+using Bosphorus.Library.Logging.Core;
 using Bosphorus.Logging.Model;
 
 namespace Bosphorus.Logging.Database
 {
-    public class DatabaseLogger: ILogger
+    public class DatabaseLogger<TLog> : ILogger<TLog> 
+        where TLog : ILog
     {
         private readonly IDao logDao;
 
@@ -13,9 +14,9 @@ namespace Bosphorus.Logging.Database
             this.logDao = logDao;
         }
 
-        public void Log<TLogModel>(TLogModel logModel) where TLogModel : ILogModel
+        public void Log(TLog log)
         {
-            logDao.Insert(logModel);
+            logDao.Insert(log);
         }
     }
 }

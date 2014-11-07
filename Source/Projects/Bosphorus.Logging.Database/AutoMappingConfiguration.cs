@@ -7,7 +7,7 @@ namespace Bosphorus.Logging.Database
     {
         public override bool IsComponent(System.Type type)
         {
-            if (type == typeof(LogModel))
+            if (type == typeof(Log))
                 return true;
 
             return false;
@@ -20,10 +20,10 @@ namespace Bosphorus.Logging.Database
 
         public override bool ShouldMap(System.Type type)
         {
-            if (!typeof (ILogModel).IsAssignableFrom(type))
+            if (!typeof (ILog).IsAssignableFrom(type))
                 return false;
 
-            if (typeof (ILogModel) == type)
+            if (typeof (ILog) == type)
                 return false;
 
             return true;

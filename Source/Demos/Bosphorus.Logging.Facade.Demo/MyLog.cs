@@ -2,7 +2,7 @@
 
 namespace Bosphorus.Library.Logging.Facade.Demo
 {
-    public class MyLogModel: LogModel
+    public class MyLog: Log
     {
         public virtual string Temp { get; set; }
     }

@@ -2,13 +2,13 @@ using System;
 
 namespace Bosphorus.Logging.Model
 {
-    public interface ILogModel
+    public interface ILog
     {
         Guid Id { get; }
 
-        string Message { get; }
+        string Message { get; set; }
 
-        LogLevel Level { get; }
+        LogLevel Level { get; set; }
 
         DateTime DateTime { get; }
 

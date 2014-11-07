@@ -2,9 +2,9 @@
 
 namespace Bosphorus.Logging.Model
 {
-    public class LogModel: ILogModel
+    public class Log: ILog
     {
-        public LogModel()
+        public Log()
         {
             this.DateTime = DateTime.Now;
         }

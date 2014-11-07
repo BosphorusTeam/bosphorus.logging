@@ -1,5 +1,4 @@
 ﻿using Bosphorus.Container.Castle.Registration;
-using Bosphorus.Library.Logging.Core.Logger;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
@@ -12,10 +11,14 @@ namespace Bosphorus.Library.Logging.Core
         {
             container.Register(
                 allLoadedTypes
-                    .BasedOn(typeof(ILogger))
+                    .BasedOn(typeof(ILogger<>))
                     .WithService
-                    .AllInterfaces()
+                    .AllInterfaces(),
+
+                Component
+                    .For<Logger>()
             );
         }
     }
+
 }

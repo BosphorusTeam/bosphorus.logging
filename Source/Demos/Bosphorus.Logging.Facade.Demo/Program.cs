@@ -1,4 +1,6 @@
 using System;
+using System.Threading;
+using System.Threading.Tasks;
 using Bosphorus.BootStapper.Common;
 using Bosphorus.BootStapper.Program;
 using Bosphorus.BootStapper.Runner;
@@ -28,6 +30,9 @@ namespace Bosphorus.Library.Logging.Facade.Demo
             OperationLog operationLog = new OperationLog();
             operationLog.Level = LogLevel.Info;
             operationLog.OperationId = Guid.NewGuid();
+
+            TaskFactory factory = new TaskFactory();
+
             logger.Log(operationLog);
         }
 

@@ -90,6 +90,7 @@
   <ItemGroup>
     <Compile Include="Decoration.Filter\ILogFilter.cs" />
     <Compile Include="Decoration.Filter\LogFilterDecorator.cs" />
+    <Compile Include="Decoration.Thread\ThreadedDecorator.cs" />
     <Compile Include="ILoggerExtensions.cs" />
     <Compile Include="ILogger.cs" />
     <Compile Include="Installer.cs" />
@@ -115,7 +116,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Bosphorus.Logging.Core.nuspec" />
+    <None Include="Bosphorus.Logging.Core.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

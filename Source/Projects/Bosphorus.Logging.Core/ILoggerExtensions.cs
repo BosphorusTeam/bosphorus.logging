@@ -2,7 +2,7 @@
 
 namespace Bosphorus.Library.Logging.Core
 {
-    public static partial class ILoggerExtensions
+    public static class ILoggerExtensions
     {
         public static void Debug<TLog>(this ILogger<TLog> extended, string message) 
             where TLog : ILog, new()

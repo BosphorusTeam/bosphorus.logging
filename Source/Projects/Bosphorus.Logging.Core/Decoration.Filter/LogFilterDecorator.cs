@@ -2,7 +2,7 @@ using Bosphorus.Logging.Model;
 
 namespace Bosphorus.Library.Logging.Core.Decoration.Filter
 {
-    class LogFilterDecorator<TLog> : ILogger<TLog> 
+    public class LogFilterDecorator<TLog> : ILogger<TLog> 
         where TLog : ILog
     {
         private readonly ILogger<TLog> decorated;

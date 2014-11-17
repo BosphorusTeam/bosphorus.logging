@@ -4,7 +4,7 @@ using Bosphorus.Logging.Model;
 
 namespace Bosphorus.Logging.Database
 {
-    public class DatabaseLogger<TLog> : ILogger<TLog> 
+    public class DatabaseLogger<TLog> : IDatabaseLogger<TLog>, ILogger<TLog> 
         where TLog : ILog
     {
         private readonly IDao logDao;

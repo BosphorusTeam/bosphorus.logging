@@ -4,7 +4,9 @@ using System.Threading.Tasks;
 using Bosphorus.BootStapper.Common;
 using Bosphorus.BootStapper.Program;
 using Bosphorus.BootStapper.Runner;
+using Bosphorus.Library.Logging.Console;
 using Bosphorus.Library.Logging.Core;
+using Bosphorus.Library.Logging.Core.Facade;
 using Bosphorus.Logging.Model;
 using Environment = Bosphorus.BootStapper.Common.Environment;
 
@@ -14,9 +16,10 @@ namespace Bosphorus.Library.Logging.Facade.Demo
     {
         private readonly Logger logger;
 
-        public Program(Logger logger)
+        public Program(Logger logger, IConsoleLogger<OperationLog> consoleLogger)
         {
             this.logger = logger;
+            //consoleLogger.Debug(new OperationLog());
         }
 
         public void Run(string[] args)
@@ -31,9 +34,9 @@ namespace Bosphorus.Library.Logging.Facade.Demo
             operationLog.Level = LogLevel.Info;
             operationLog.OperationId = Guid.NewGuid();
 
-            TaskFactory factory = new TaskFactory();
-
             logger.Log(operationLog);
+
+            Thread.Sleep(3000);
         }
 
         static void Main(string[] args)

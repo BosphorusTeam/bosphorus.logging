@@ -4,7 +4,7 @@ using Bosphorus.Logging.Model;
 
 namespace Bosphorus.Library.Logging.Core
 {
-    public static partial class ILoggerDecorations
+    public static class ILoggerDecorations
     {
         public static ILogger<TLog> Filtered<TLog>(this ILogger<TLog> extended, ILogFilter logFilter)
             where TLog : ILog

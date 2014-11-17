@@ -15,15 +15,18 @@ namespace Bosphorus.Library.Logging.Facade.Demo
     public class Program: IProgram
     {
         private readonly Logger logger;
+        private readonly IConsoleLogger<OperationLog> consoleLogger;
 
         public Program(Logger logger, IConsoleLogger<OperationLog> consoleLogger)
         {
             this.logger = logger;
-            //consoleLogger.Debug(new OperationLog());
+            this.consoleLogger = consoleLogger;
         }
 
         public void Run(string[] args)
         {
+            consoleLogger.Debug("Console logger message");
+
             MyLog log = new MyLog();
             log.Level = LogLevel.Warn;
             log.Message = "Deneme";

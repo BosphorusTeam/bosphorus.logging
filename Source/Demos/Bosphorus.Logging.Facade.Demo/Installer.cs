@@ -24,11 +24,11 @@ namespace Bosphorus.Library.Logging.Facade.Demo
 
                 Component
                     .For<IParameterProvider>()
-                    .ImplementedBy<AppConfigParameterProvider>()
+                    .ImplementedBy<AppConfigParameterProvider>(),
 
-                //Decorator
-                //    .For(typeof(ILogger<>))
-                //    .Is(typeof(ThreadedDecorator<>))
+                Decorator
+                    .For(typeof(ILogger<>))
+                    .Is(typeof(ThreadedDecorator<>))
             );
         }
     }

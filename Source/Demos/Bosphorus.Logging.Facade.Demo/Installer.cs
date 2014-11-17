@@ -1,4 +1,6 @@
-﻿using Bosphorus.Container.Castle.Fluent;
+﻿using Bosphorus.Configuration.Core;
+using Bosphorus.Configuration.Default.AppConfig;
+using Bosphorus.Container.Castle.Fluent;
 using Bosphorus.Container.Castle.Registration;
 using Bosphorus.Library.Logging.Console;
 using Bosphorus.Library.Logging.Core;
@@ -20,9 +22,13 @@ namespace Bosphorus.Library.Logging.Facade.Demo
                     .Named("Temp")
                     .IsDefault(),
 
-                Decorator
-                    .For(typeof(ILogger<>))
-                    .Is(typeof(ThreadedDecorator<>))
+                Component
+                    .For<IParameterProvider>()
+                    .ImplementedBy<AppConfigParameterProvider>()
+
+                //Decorator
+                //    .For(typeof(ILogger<>))
+                //    .Is(typeof(ThreadedDecorator<>))
             );
         }
     }

@@ -3,7 +3,7 @@ using System.Reflection;
 using Bosphorus.Dao.NHibernate.Fluent.AutoPersistenceModelProvider;
 using FluentNHibernate.Automapping;
 
-namespace Bosphorus.Logging.Database
+namespace Bosphorus.Logging.Database.Configuration
 {
     public class AutoPersistenceModelProvider : AbstractAutoPersistenceModelProvider
     {

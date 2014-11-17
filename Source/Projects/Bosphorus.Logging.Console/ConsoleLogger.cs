@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Bosphorus.Library.Logging.Console.Configuration;
 using Bosphorus.Library.Logging.Core;
 using Bosphorus.Logging.Model;
 
@@ -10,7 +11,6 @@ namespace Bosphorus.Library.Logging.Console
     {
         private readonly string logFormat;
         private static readonly IDictionary<LogLevel, ConsoleColor> logColors;
-        private const string DEFAULT_FORMAT = "DateTime: {0}, Level:{1}, Message:{2}";
 
         static ConsoleLogger()
         {
@@ -23,14 +23,9 @@ namespace Bosphorus.Library.Logging.Console
             logColors.Add(LogLevel.Warn, ConsoleColor.Yellow);
         }
 
-        public ConsoleLogger()
-            : this(DEFAULT_FORMAT)
+        public ConsoleLogger(IConsoleLoggerConfiguration configuration)
         {
-        }
-
-        public ConsoleLogger(string logFormat)
-        {
-            this.logFormat = logFormat;
+            this.logFormat = configuration.LogFormat;
         }
 
         public void Log(TLog log)

@@ -1,5 +1,5 @@
 ﻿using System;
-using Bosphorus.Container.Castle.Registry;
+using Bosphorus.Container.Castle.Extra;
 using Bosphorus.Logging.Model;
 
 namespace Bosphorus.Library.Logging.Core.Facade

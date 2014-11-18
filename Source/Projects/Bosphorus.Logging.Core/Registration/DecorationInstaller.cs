@@ -1,5 +1,4 @@
 ﻿using Bosphorus.Container.Castle.Fluent;
-using Bosphorus.Container.Castle.Installerr;
 using Bosphorus.Container.Castle.Registration;
 using Bosphorus.Library.Logging.Core.Decoration.Exception;
 using Castle.MicroKernel.Registration;

@@ -1,13 +1,15 @@
 ﻿using Bosphorus.Configuration.Core;
+using Bosphorus.Logging.Model;
 
 namespace Bosphorus.Library.Logging.Console.Configuration
 {
-    public class ConsoleLoggerConfiguration : AbstractConfiguration, IConsoleLoggerConfiguration
+    public class ConsoleLoggerConfiguration<TLog> : AbstractConfiguration<ConsoleLogger<TLog>>, IConsoleLoggerConfiguration<TLog>
+        where TLog : ILog
     {
         private const string DEFAULT_LOGFORMAT = "DateTime: {0}, Level:{1}, Message:{2}";
 
         public ConsoleLoggerConfiguration(IParameterProvider parameterProvider) 
-            : base(typeof(IConsoleLogger<>).FullName, parameterProvider)
+            : base(parameterProvider)
         {
         }
 

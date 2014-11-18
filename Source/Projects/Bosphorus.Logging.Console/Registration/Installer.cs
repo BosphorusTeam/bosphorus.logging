@@ -17,8 +17,8 @@ namespace Bosphorus.Library.Logging.Console.Registration
                     .ImplementedBy(typeof(ConsoleLogger<>)),
 
                 Component
-                    .For<IConsoleLoggerConfiguration>()
-                    .ImplementedBy<ConsoleLoggerConfiguration>()
+                    .For(typeof(IConsoleLoggerConfiguration<>))
+                    .ImplementedBy(typeof(ConsoleLoggerConfiguration<>))
             );
         }
     }

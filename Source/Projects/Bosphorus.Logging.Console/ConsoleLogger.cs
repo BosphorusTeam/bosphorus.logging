@@ -23,7 +23,7 @@ namespace Bosphorus.Library.Logging.Console
             logColors.Add(LogLevel.Warn, ConsoleColor.Yellow);
         }
 
-        public ConsoleLogger(IConsoleLoggerConfiguration configuration)
+        public ConsoleLogger(IConsoleLoggerConfiguration<TLog> configuration)
         {
             this.logFormat = configuration.LogFormat;
         }

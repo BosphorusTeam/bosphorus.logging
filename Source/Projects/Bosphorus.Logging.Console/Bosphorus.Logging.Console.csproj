@@ -70,9 +70,9 @@
     <Reference Include="Bosphorus.Common.Clr">
       <HintPath>..\..\packages\Bosphorus.Common.Clr.1.0.0.15\lib\net45\Bosphorus.Common.Clr.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Configuration.Core, Version=1.0.0.12, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Configuration.Core, Version=1.0.0.20, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Configuration.Core.1.0.0.12\lib\net45\Bosphorus.Configuration.Core.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Configuration.Core.1.0.0.20\lib\net45\Bosphorus.Configuration.Core.dll</HintPath>
     </Reference>
     <Reference Include="Bosphorus.Container.Castle, Version=1.1.0.30, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

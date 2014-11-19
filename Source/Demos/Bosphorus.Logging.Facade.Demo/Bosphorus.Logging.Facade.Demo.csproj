@@ -80,17 +80,17 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Bosphorus.Common.Clr.1.0.0.15\lib\net45\Bosphorus.Common.Clr.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Configuration.Core, Version=1.0.0.20, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Configuration.Core, Version=1.0.0.23, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Configuration.Core.1.0.0.20\lib\net45\Bosphorus.Configuration.Core.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Configuration.Core.1.0.0.23\lib\net45\Bosphorus.Configuration.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Configuration.Default, Version=1.0.0.20, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Configuration.Default, Version=1.0.0.23, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Configuration.Default.1.0.0.20\lib\net45\Bosphorus.Configuration.Default.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Configuration.Default.1.0.0.23\lib\net45\Bosphorus.Configuration.Default.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Container.Castle, Version=1.1.0.30, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Container.Castle, Version=1.1.0.31, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Container.Castle.1.1.0.30\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Container.Castle.1.1.0.31\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
     </Reference>
     <Reference Include="Bosphorus.Dao.Core, Version=2.1.0.28, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -151,6 +151,10 @@
     <ProjectReference Include="..\..\Projects\Bosphorus.Logging.Core\Bosphorus.Logging.Core.csproj">
       <Project>{0E43DB14-987E-415D-8CDD-962C40C5AEA7}</Project>
       <Name>Bosphorus.Logging.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Projects\Bosphorus.Logging.Database\Bosphorus.Logging.Database.csproj">
+      <Project>{4C03E0F8-EEED-4E6D-AE66-E7BEF449C703}</Project>
+      <Name>Bosphorus.Logging.Database</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Projects\Bosphorus.Logging.Model\Bosphorus.Logging.Model.csproj">
       <Project>{67E3D2FD-AFE7-4963-B0FE-F5E576C8B286}</Project>

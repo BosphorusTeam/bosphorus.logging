@@ -1,8 +1,5 @@
-﻿using Bosphorus.Configuration.Core;
-using Bosphorus.Configuration.Default.AppConfig;
-using Bosphorus.Container.Castle.Fluent;
+﻿using Bosphorus.Container.Castle.Fluent;
 using Bosphorus.Container.Castle.Registration;
-using Bosphorus.Library.Logging.Console;
 using Bosphorus.Library.Logging.Core;
 using Bosphorus.Library.Logging.Core.Decoration.Thread;
 using Castle.MicroKernel.Registration;
@@ -16,16 +13,6 @@ namespace Bosphorus.Library.Logging.Facade.Demo
         protected override void Install(IWindsorContainer container, IConfigurationStore store, FromTypesDescriptor allLoadedTypes)
         {
             container.Register(
-                Component
-                    .For(typeof(ILogger<>))
-                    .ImplementedBy(typeof(ConsoleLogger<>))
-                    .Named("Temp")
-                    .IsDefault(),
-
-                Component
-                    .For<IParameterProvider>()
-                    .ImplementedBy<AppConfigParameterProvider>(),
-
                 Decorator
                     .For(typeof(ILogger<>))
                     .Is(typeof(ThreadedDecorator<>))

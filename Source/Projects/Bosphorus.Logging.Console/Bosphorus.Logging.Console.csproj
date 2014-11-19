@@ -70,13 +70,13 @@
     <Reference Include="Bosphorus.Common.Clr">
       <HintPath>..\..\packages\Bosphorus.Common.Clr.1.0.0.15\lib\net45\Bosphorus.Common.Clr.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Configuration.Core, Version=1.0.0.20, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Configuration.Core, Version=1.0.0.23, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Configuration.Core.1.0.0.20\lib\net45\Bosphorus.Configuration.Core.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Configuration.Core.1.0.0.23\lib\net45\Bosphorus.Configuration.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Container.Castle, Version=1.1.0.30, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Container.Castle, Version=1.1.0.31, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Container.Castle.1.1.0.30\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Container.Castle.1.1.0.31\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core">
       <HintPath>..\..\packages\Castle.Core.3.2.2\lib\net45\Castle.Core.dll</HintPath>

@@ -1,6 +1,5 @@
 using System;
 using System.Threading;
-using System.Threading.Tasks;
 using Bosphorus.BootStapper.Common;
 using Bosphorus.BootStapper.Program;
 using Bosphorus.BootStapper.Runner;
@@ -23,6 +22,11 @@ namespace Bosphorus.Library.Logging.Facade.Demo
             this.consoleLogger = consoleLogger;
         }
 
+        static void Main(string[] args)
+        {
+            ConsoleRunner.Run<Program>(Environment.Local, Perspective.Debug, args);
+        }
+
         public void Run(string[] args)
         {
             consoleLogger.Debug("Console logger message");
@@ -40,11 +44,6 @@ namespace Bosphorus.Library.Logging.Facade.Demo
             logger.Log(operationLog);
 
             Thread.Sleep(3000);
-        }
-
-        static void Main(string[] args)
-        {
-            ConsoleRunner.Run<Program>(Environment.Development, Perspective.Debug, args);
         }
     }
 }

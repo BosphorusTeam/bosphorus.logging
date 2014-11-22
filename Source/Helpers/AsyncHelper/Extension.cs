@@ -7,7 +7,7 @@ namespace AsyncHelper
 {
     public static class Extension
     {
-        public static async Task LogAsync(this ILogger<Log> extended, Log log)
+        public static async Task LogAsync(this ILogger<ILog> extended, ILog log)
         {
             Console.WriteLine("Logging strated");
             await Task.Factory.StartNew(() => extended.Log(log));

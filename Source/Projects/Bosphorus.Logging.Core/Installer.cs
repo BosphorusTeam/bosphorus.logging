@@ -1,21 +1,27 @@
 ﻿using Bosphorus.Container.Castle.Fluent;
 using Bosphorus.Container.Castle.Registration;
-using Bosphorus.Library.Logging.Core.Decoration.Exception;
+using Bosphorus.Library.Logging.Core.Facade;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 
-namespace Bosphorus.Library.Logging.Core.Registration
+namespace Bosphorus.Library.Logging.Core
 {
-    public class DecorationInstaller: AbstractWindsorInstaller, IDecoratorInstaller
+    public class Installer: AbstractWindsorInstaller
     {
         protected override void Install(IWindsorContainer container, IConfigurationStore store, FromTypesDescriptor allLoadedTypes)
         {
             container.Register(
-                Decorator
+                Component
                     .For(typeof(ILogger<>))
-                    .Is(typeof(ExceptionDecorator<>))
+                    .ImplementedBy(typeof(NullLogger<>))
+                    .IsFallback()
+                    .NamedUnique(),
+
+                Component
+                    .For<Logger>()
             );
         }
     }
+
 }

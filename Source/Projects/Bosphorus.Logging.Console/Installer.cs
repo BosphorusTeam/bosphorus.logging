@@ -1,5 +1,4 @@
-﻿using System;
-using Bosphorus.Container.Castle.Fluent;
+﻿using Bosphorus.Container.Castle.Fluent;
 using Bosphorus.Container.Castle.Registration;
 using Bosphorus.Library.Logging.Console.Configuration;
 using Bosphorus.Library.Logging.Core;
@@ -7,7 +6,7 @@ using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 
-namespace Bosphorus.Library.Logging.Console.Registration
+namespace Bosphorus.Library.Logging.Console
 {
     public class Installer: AbstractWindsorInstaller
     {

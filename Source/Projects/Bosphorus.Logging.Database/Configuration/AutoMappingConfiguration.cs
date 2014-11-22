@@ -7,7 +7,7 @@ namespace Bosphorus.Logging.Database.Configuration
     {
         public override bool IsComponent(System.Type type)
         {
-            if (type == typeof(Log))
+            if (type == typeof(AbstractLog))
                 return true;
 
             return false;

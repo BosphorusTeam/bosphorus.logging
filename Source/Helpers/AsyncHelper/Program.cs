@@ -15,9 +15,9 @@ namespace AsyncHelper
 {
     class Program: IProgram
     {
-        private readonly ILogger<Log> logger;
+        private readonly ILogger<ILog> logger;
 
-        public Program(ILogger<Log> logger)
+        public Program(ILogger<ILog> logger)
         {
             this.logger = logger.Threaded();
         }

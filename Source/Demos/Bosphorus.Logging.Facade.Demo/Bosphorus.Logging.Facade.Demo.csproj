@@ -44,6 +44,7 @@
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -68,41 +69,33 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aras.Common.Customization.Bosphorus, Version=1.0.0.188, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Aras.Common.Customization.Bosphorus.1.0.0.188\lib\net45\Aras.Common.Customization.Bosphorus.dll</HintPath>
-    </Reference>
     <Reference Include="Bosphorus.BootStapper, Version=1.1.0.16, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Bosphorus.BootStapper.1.1.0.16\lib\net45\Bosphorus.BootStapper.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Common.Clr, Version=1.0.0.15, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Common.Clr, Version=1.0.0.16, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Common.Clr.1.0.0.15\lib\net45\Bosphorus.Common.Clr.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Common.Clr.1.0.0.16\lib\net45\Bosphorus.Common.Clr.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Configuration.Core, Version=1.0.0.23, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Configuration.Core, Version=1.0.0.24, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Configuration.Core.1.0.0.23\lib\net45\Bosphorus.Configuration.Core.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Configuration.Core.1.0.0.24\lib\net45\Bosphorus.Configuration.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Configuration.Default, Version=1.0.0.23, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Configuration.Default, Version=1.0.0.24, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Configuration.Default.1.0.0.23\lib\net45\Bosphorus.Configuration.Default.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Configuration.Default.1.0.0.24\lib\net45\Bosphorus.Configuration.Default.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Container.Castle, Version=1.1.0.31, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Container.Castle, Version=1.1.0.34, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Container.Castle.1.1.0.31\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Container.Castle.1.1.0.34\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Dao.Core, Version=2.1.0.28, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Dao.Core, Version=2.1.0.29, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Dao.Core.2.1.0.28\lib\net45\Bosphorus.Dao.Core.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Dao.Core.2.1.0.29\lib\net45\Bosphorus.Dao.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Dao.NHibernate, Version=2.1.0.28, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Dao.NHibernate, Version=2.1.0.29, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Dao.NHibernate.2.1.0.28\lib\net45\Bosphorus.Dao.NHibernate.dll</HintPath>
-    </Reference>
-    <Reference Include="Bosphorus.Dao.NHibernate.Extension, Version=2.1.0.28, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Dao.NHibernate.Extension.2.1.0.28\lib\net45\Bosphorus.Dao.NHibernate.Extension.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Dao.NHibernate.2.1.0.29\lib\net45\Bosphorus.Dao.NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -137,6 +130,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseLoggerConfiguration.cs" />
     <Compile Include="Installer.cs" />
     <Compile Include="MyLog.cs" />
     <Compile Include="OperationLog.cs" />

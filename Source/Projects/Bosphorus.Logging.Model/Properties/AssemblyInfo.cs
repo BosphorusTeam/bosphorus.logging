@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Bosphorus.Logging.Model")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Bosphorus.Logging.Model")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Bosphorus")]
 [assembly: AssemblyProduct("Bosphorus.Logging.Model")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]

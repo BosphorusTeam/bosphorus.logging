@@ -77,13 +77,9 @@
       <HintPath>..\..\packages\Bosphorus.Common.Clr.2.0.3.0\lib\net45\Bosphorus.Common.Clr.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Bosphorus.Configuration.Core, Version=1.0.0.24, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Configuration.Default, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Configuration.Core.1.0.0.24\lib\net45\Bosphorus.Configuration.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Bosphorus.Configuration.Default, Version=1.0.0.24, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Configuration.Default.1.0.0.24\lib\net45\Bosphorus.Configuration.Default.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Configuration.Default.2.0.2.0\lib\net45\Bosphorus.Configuration.Default.dll</HintPath>
     </Reference>
     <Reference Include="Bosphorus.Container.Castle">
       <HintPath>..\..\packages\Bosphorus.Container.Castle.2.0.1.0\lib\net45\Bosphorus.Container.Castle.dll</HintPath>

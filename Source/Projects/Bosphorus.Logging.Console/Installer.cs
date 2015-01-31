@@ -1,7 +1,4 @@
-﻿using Bosphorus.Container.Castle.Fluent;
-using Bosphorus.Container.Castle.Registration;
-using Bosphorus.Library.Logging.Console.Configuration;
-using Bosphorus.Library.Logging.Core;
+﻿using Bosphorus.Container.Castle.Registration;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
@@ -14,17 +11,14 @@ namespace Bosphorus.Library.Logging.Console
         {
             container.Register(
                 Component
-                    .For(typeof (ILogger<>))
-                    .Forward(typeof (IConsoleLogger<>))
+                    .For(typeof(IConsoleLogger<>))
                     .ImplementedBy(typeof (ConsoleLogger<>))
-                    .IsFallback()
-                    .NamedUnique(),
+                    .NamedAutomatically("ConsoleLogger"),
 
                 Component
                     .For(typeof(IConsoleLoggerConfiguration<>))
                     .ImplementedBy(typeof(ConsoleLoggerConfiguration<>))
                     .IsFallback()
-                    .NamedUnique()
             );
         }
     }

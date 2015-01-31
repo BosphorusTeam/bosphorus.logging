@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
-  <Import Project="..\..\packages\SQLitePCL.3.8.5.0\build\net45\SQLitePCL.props" Condition="Exists('..\..\packages\SQLitePCL.3.8.5.0\build\net45\SQLitePCL.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -33,6 +32,7 @@
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>c34af87f</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -69,13 +69,13 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bosphorus.BootStapper, Version=1.1.0.16, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.BootStapper, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.BootStapper.1.1.0.16\lib\net45\Bosphorus.BootStapper.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.BootStapper.2.0.2.0\lib\net45\Bosphorus.BootStapper.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Common.Clr, Version=1.0.0.16, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Common.Clr.1.0.0.16\lib\net45\Bosphorus.Common.Clr.dll</HintPath>
+    <Reference Include="Bosphorus.Common.Clr">
+      <HintPath>..\..\packages\Bosphorus.Common.Clr.2.0.3.0\lib\net45\Bosphorus.Common.Clr.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Bosphorus.Configuration.Core, Version=1.0.0.24, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -85,44 +85,61 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Bosphorus.Configuration.Default.1.0.0.24\lib\net45\Bosphorus.Configuration.Default.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Container.Castle, Version=1.1.0.34, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Container.Castle.1.1.0.34\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
+    <Reference Include="Bosphorus.Container.Castle">
+      <HintPath>..\..\packages\Bosphorus.Container.Castle.2.0.1.0\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Bosphorus.Dao.Core, Version=2.1.0.29, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Dao.Core.2.1.0.29\lib\net45\Bosphorus.Dao.Core.dll</HintPath>
+    <Reference Include="Bosphorus.Dao.Core">
+      <HintPath>..\..\packages\Bosphorus.Dao.Core.2.2.1.0\lib\net45\Bosphorus.Dao.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Bosphorus.Dao.NHibernate, Version=2.1.0.29, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Dao.NHibernate.2.1.0.29\lib\net45\Bosphorus.Dao.NHibernate.dll</HintPath>
+    <Reference Include="Bosphorus.Dao.Lucene">
+      <HintPath>..\..\packages\Bosphorus.Dao.Lucene.2.2.1.0\lib\net45\Bosphorus.Dao.Lucene.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Castle.Core.3.2.2\lib\net45\Castle.Core.dll</HintPath>
+    <Reference Include="Bosphorus.Dao.NHibernate">
+      <HintPath>..\..\packages\Bosphorus.Dao.NHibernate.2.2.1.0\lib\net45\Bosphorus.Dao.NHibernate.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Castle.Windsor, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Castle.Windsor.3.2.1\lib\net45\Castle.Windsor.dll</HintPath>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="FluentNHibernate, Version=1.4.0.0, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\FluentNHibernate.1.4.0.0\lib\net35\FluentNHibernate.dll</HintPath>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\packages\Common.Logging.2.3.1\lib\net40\Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\..\packages\FluentNHibernate.2.0.1.0\lib\net40\FluentNHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Iesi.Collections.4.0.1.4000\lib\net40\Iesi.Collections.dll</HintPath>
     </Reference>
-    <Reference Include="NHibernate, Version=4.0.0.1001, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\NHibernate.4.0.0.0\lib\net40\NHibernate.dll</HintPath>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\..\packages\Lucene.Net.3.0.3\lib\NET40\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Linq">
+      <HintPath>..\..\packages\Lucene.Net.Linq.3.5.2\lib\net40\Lucene.Net.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\packages\NHibernate.4.0.3.4000\lib\net40\NHibernate.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Oracle.ManagedDataAccess">
       <HintPath>..\..\packages\odp.net.managed.121.1.2\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>
-    <Reference Include="SQLitePCL, Version=3.8.5.0, Culture=neutral, PublicKeyToken=bddade01e9c850c5, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\SQLitePCL.3.8.5.0\lib\net45\SQLitePCL.dll</HintPath>
+    <Reference Include="Remotion.Linq">
+      <HintPath>..\..\packages\Remotion.Linq.1.13.183.0\lib\net35\Remotion.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -130,12 +147,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatabaseLoggerConfiguration.cs" />
     <Compile Include="Installer.cs" />
+    <Compile Include="Local.cs" />
     <Compile Include="MyLog.cs" />
     <Compile Include="OperationLog.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SchemaUpdater.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Projects\Bosphorus.Logging.Console\Bosphorus.Logging.Console.csproj">
@@ -176,20 +194,7 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="sqlite3.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\SQLitePCL.3.8.5.0\build\net45\SQLitePCL.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\SQLitePCL.3.8.5.0\build\net45\SQLitePCL.props'))" />
-    <Error Condition="!Exists('..\..\packages\SQLitePCL.3.8.5.0\build\net45\SQLitePCL.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\SQLitePCL.3.8.5.0\build\net45\SQLitePCL.targets'))" />
-  </Target>
-  <Import Project="..\..\packages\SQLitePCL.3.8.5.0\build\net45\SQLitePCL.targets" Condition="Exists('..\..\packages\SQLitePCL.3.8.5.0\build\net45\SQLitePCL.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

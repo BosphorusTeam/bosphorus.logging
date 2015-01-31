@@ -1,11 +1,13 @@
-﻿using Bosphorus.Container.Castle.Fluent;
-using Bosphorus.Container.Castle.Fluent.Decoration;
+﻿using Bosphorus.Container.Castle.Fluent.Decoration;
 using Bosphorus.Container.Castle.Registration;
+using Bosphorus.Dao.Core.Dao;
+using Bosphorus.Dao.Lucene;
+using Bosphorus.Dao.Lucene.Dao;
+using Bosphorus.Dao.NHibernate.Dao;
 using Bosphorus.Library.Logging.Core;
 using Bosphorus.Library.Logging.Core.Decoration.Thread;
 using Bosphorus.Logging.Database;
-using Bosphorus.Logging.Database.Configuration;
-using Bosphorus.Logging.Model;
+using Bosphorus.Logging.Database.Container;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
@@ -18,16 +20,16 @@ namespace Bosphorus.Library.Logging.Facade.Demo
         {
             container.Register(
                 Component
-                    .For(typeof(ILogger<>))
+                    .For(typeof (ILogger<>))
                     .ImplementedBy(typeof(DatabaseLogger<>)),
-
-                //Component
-                //    .For(typeof(IDatabaseLoggerConfiguration<>))
-                //    .ImplementedBy(typeof(DatabaseLoggerConfiguration<>)),
 
                 Decorator
                     .Of(typeof(ILogger<>))
-                    .Is(typeof(ThreadedDecorator<>))
+                    .Is(typeof(ThreadedDecorator<>)),
+
+                LoggingComponent
+                    .IDao
+                    .ImplementedBy(typeof(NHibernateStatelessDao<>))
             );
         }
     }

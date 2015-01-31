@@ -1,7 +1,7 @@
 ﻿using Bosphorus.Container.Castle.Fluent;
 using Bosphorus.Container.Castle.Registration;
-using Bosphorus.Library.Logging.Core;
-using Bosphorus.Logging.Database.Configuration;
+using Bosphorus.Logging.Database.Common;
+using Bosphorus.Logging.Database.Container;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
@@ -14,17 +14,14 @@ namespace Bosphorus.Logging.Database
         {
             container.Register(
                 Component
-                    .For(typeof(ILogger<>))
-                    .Forward(typeof(IDatabaseLogger<>))
+                    .For(typeof(IDatabaseLogger<>))
                     .ImplementedBy(typeof(DatabaseLogger<>))
-                    .IsFallback()
-                    .NamedUnique()
+                    .NamedAutomatically("DatabaseLogger"),
 
-                //Component
-                //    .For(typeof(IDatabaseLoggerConfiguration<>))
-                //    .ImplementedBy(typeof(AbstractDatabaseLoggerConfiguration<>))
-                //    .IsFallback()
-                //    .NamedUnique()
+                Component
+                    .For<IDatabaseLoggerConfiguration>()
+                    .ImplementedBy<DatabaseLoggerConfiguration>()
+                    .IsFallback()
             );
         }
     }

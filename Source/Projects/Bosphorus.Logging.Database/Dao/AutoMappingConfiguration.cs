@@ -1,7 +1,8 @@
-﻿using Bosphorus.Logging.Model;
+﻿using Bosphorus.Logging.Database.Common;
+using Bosphorus.Logging.Model;
 using FluentNHibernate.Automapping;
 
-namespace Bosphorus.Logging.Database.Configuration
+namespace Bosphorus.Logging.Database.Dao
 {
     public class AutoMappingConfiguration : DefaultAutomappingConfiguration
     {
@@ -20,13 +21,13 @@ namespace Bosphorus.Logging.Database.Configuration
 
         public override bool ShouldMap(System.Type type)
         {
-            if (!typeof (ILog).IsAssignableFrom(type))
-                return false;
-
             if (typeof (ILog) == type)
                 return false;
 
-            return true;
+            if (LogModelConvention.IsLogModel(type))
+                return true;
+
+            return false;
         }
     }
 }

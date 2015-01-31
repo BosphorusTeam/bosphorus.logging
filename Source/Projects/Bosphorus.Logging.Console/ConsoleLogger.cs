@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Bosphorus.Library.Logging.Console.Configuration;
 using Bosphorus.Library.Logging.Core;
 using Bosphorus.Logging.Model;
 

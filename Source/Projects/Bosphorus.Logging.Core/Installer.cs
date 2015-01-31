@@ -1,5 +1,4 @@
-﻿using Bosphorus.Container.Castle.Fluent;
-using Bosphorus.Container.Castle.Registration;
+﻿using Bosphorus.Container.Castle.Registration;
 using Bosphorus.Library.Logging.Core.Facade;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
@@ -12,12 +11,6 @@ namespace Bosphorus.Library.Logging.Core
         protected override void Install(IWindsorContainer container, IConfigurationStore store, FromTypesDescriptor allLoadedTypes)
         {
             container.Register(
-                Component
-                    .For(typeof(ILogger<>))
-                    .ImplementedBy(typeof(NullLogger<>))
-                    .IsFallback()
-                    .NamedUnique(),
-
                 Component
                     .For<Logger>()
             );

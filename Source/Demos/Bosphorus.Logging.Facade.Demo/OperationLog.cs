@@ -1,7 +1,7 @@
 ﻿using System;
 using Bosphorus.Logging.Model;
 
-namespace Bosphorus.Library.Logging.Facade.Demo
+namespace Bosphorus.Logging.Facade.Demo
 {
     public class OperationLog: AbstractLog
     {

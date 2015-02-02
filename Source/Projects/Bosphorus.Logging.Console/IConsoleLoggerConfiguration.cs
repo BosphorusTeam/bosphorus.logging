@@ -1,7 +1,7 @@
 ﻿using Bosphorus.Configuration.Core;
 using Bosphorus.Logging.Model;
 
-namespace Bosphorus.Library.Logging.Console
+namespace Bosphorus.Logging.Console
 {
     public interface IConsoleLoggerConfiguration<TLog> : IConfiguration 
         where TLog : ILog

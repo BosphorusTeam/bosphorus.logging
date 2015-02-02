@@ -1,5 +1,5 @@
 ﻿using Bosphorus.Dao.Core.Dao;
-using Bosphorus.Library.Logging.Core;
+using Bosphorus.Logging.Core;
 using Bosphorus.Logging.Model;
 
 namespace Bosphorus.Logging.Database

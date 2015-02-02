@@ -8,8 +8,8 @@
     <ProjectGuid>{CAC6B8C3-9DFA-46EB-B425-9840760F1368}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Bosphorus.Library.Logging.Console</RootNamespace>
-    <AssemblyName>Bosphorus.Library.Logging.Console</AssemblyName>
+    <RootNamespace>Bosphorus.Logging.Console</RootNamespace>
+    <AssemblyName>Bosphorus.Logging.Console</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>

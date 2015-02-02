@@ -1,18 +1,15 @@
 ﻿using Bosphorus.Container.Castle.Fluent.Decoration;
 using Bosphorus.Container.Castle.Registration;
-using Bosphorus.Dao.Core.Dao;
-using Bosphorus.Dao.Lucene;
-using Bosphorus.Dao.Lucene.Dao;
 using Bosphorus.Dao.NHibernate.Dao;
-using Bosphorus.Library.Logging.Core;
-using Bosphorus.Library.Logging.Core.Decoration.Thread;
+using Bosphorus.Logging.Core;
+using Bosphorus.Logging.Core.Decoration.Thread;
 using Bosphorus.Logging.Database;
 using Bosphorus.Logging.Database.Container;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 
-namespace Bosphorus.Library.Logging.Facade.Demo
+namespace Bosphorus.Logging.Facade.Demo
 {
     public class Installer: AbstractWindsorInstaller
     {

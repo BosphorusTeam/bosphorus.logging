@@ -2,7 +2,7 @@
 using Bosphorus.Container.Castle.Extra;
 using Bosphorus.Logging.Model;
 
-namespace Bosphorus.Library.Logging.Core.Facade
+namespace Bosphorus.Logging.Core.Facade
 {
     public class Logger
     {

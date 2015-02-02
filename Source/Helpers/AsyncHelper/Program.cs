@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Bosphorus.BootStapper.Common;
 using Bosphorus.BootStapper.Program;
 using Bosphorus.BootStapper.Runner;
-using Bosphorus.Library.Logging.Core;
+using Bosphorus.Logging.Core;
 using Bosphorus.Logging.Model;
 using Environment = Bosphorus.BootStapper.Common.Environment;
 

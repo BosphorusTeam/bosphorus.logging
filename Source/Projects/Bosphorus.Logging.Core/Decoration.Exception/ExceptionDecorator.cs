@@ -1,7 +1,7 @@
 ﻿using System;
 using Bosphorus.Logging.Model;
 
-namespace Bosphorus.Library.Logging.Core.Decoration.Exception
+namespace Bosphorus.Logging.Core.Decoration.Exception
 {
     public class ExceptionDecorator<TLog> : ILogger<TLog> 
         where TLog : ILog

@@ -1,6 +1,6 @@
 using Bosphorus.Logging.Model;
 
-namespace Bosphorus.Library.Logging.Core
+namespace Bosphorus.Logging.Core
 {
     public class NullLogger<TLog> : ILogger<TLog> 
         where TLog : ILog

@@ -3,7 +3,7 @@ using Bosphorus.Dao.NHibernate.Configuration.Fluent.ConfigurationProcessor;
 using NHibernate.Tool.hbm2ddl;
 using Environment = Bosphorus.BootStapper.Common.Environment;
 
-namespace Bosphorus.Library.Logging.Facade.Demo
+namespace Bosphorus.Logging.Facade.Demo
 {
     public class SchemaUpdater : AbstractConfigurationProcessor
     {

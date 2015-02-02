@@ -8,8 +8,8 @@
     <ProjectGuid>{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Bosphorus.Library.Logging.Facade.Demo</RootNamespace>
-    <AssemblyName>Bosphorus.Library.Logging.Facade.Demo</AssemblyName>
+    <RootNamespace>Bosphorus.Logging.Facade.Demo</RootNamespace>
+    <AssemblyName>Bosphorus.Logging.Facade.Demo</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>

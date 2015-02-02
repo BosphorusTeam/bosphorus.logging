@@ -3,7 +3,7 @@ using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 
-namespace Bosphorus.Library.Logging.Console
+namespace Bosphorus.Logging.Console
 {
     public class Installer: AbstractWindsorInstaller
     {

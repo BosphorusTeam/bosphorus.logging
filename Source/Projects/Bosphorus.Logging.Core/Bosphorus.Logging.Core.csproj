@@ -8,8 +8,8 @@
     <ProjectGuid>{0E43DB14-987E-415D-8CDD-962C40C5AEA7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Bosphorus.Library.Logging.Core</RootNamespace>
-    <AssemblyName>Bosphorus.Library.Logging.Core</AssemblyName>
+    <RootNamespace>Bosphorus.Logging.Core</RootNamespace>
+    <AssemblyName>Bosphorus.Logging.Core</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>

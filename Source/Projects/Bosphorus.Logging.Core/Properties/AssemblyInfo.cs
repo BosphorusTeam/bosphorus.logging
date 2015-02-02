@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Bosphorus.Library.Logging.Core")]
-[assembly: AssemblyDescription("Bosphorus.Library.Logging.Core")]
+[assembly: AssemblyTitle("Bosphorus.Logging.Core")]
+[assembly: AssemblyDescription("Bosphorus.Logging.Core")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Bosphorus")]
-[assembly: AssemblyProduct("Bosphorus.Library.Logging.Core")]
+[assembly: AssemblyProduct("Bosphorus.Logging.Core")]
 [assembly: AssemblyCopyright("Copyright ©  2009")]
 [assembly: AssemblyTrademark("Bosphorus")]
 [assembly: AssemblyCulture("")]

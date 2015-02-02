@@ -1,12 +1,11 @@
-﻿using Bosphorus.Container.Castle.Fluent;
-using Bosphorus.Container.Castle.Fluent.Decoration;
+﻿using Bosphorus.Container.Castle.Fluent.Decoration;
 using Bosphorus.Container.Castle.Registration;
-using Bosphorus.Library.Logging.Core.Decoration.Exception;
+using Bosphorus.Logging.Core.Decoration.Exception;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 
-namespace Bosphorus.Library.Logging.Core
+namespace Bosphorus.Logging.Core
 {
     public class DecorationInstaller: AbstractWindsorInstaller, IDecoratorInstaller
     {

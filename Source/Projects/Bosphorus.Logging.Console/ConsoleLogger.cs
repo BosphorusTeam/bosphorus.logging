@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Bosphorus.Library.Logging.Core;
+using Bosphorus.Logging.Core;
 using Bosphorus.Logging.Model;
 
-namespace Bosphorus.Library.Logging.Console
+namespace Bosphorus.Logging.Console
 {
     public class ConsoleLogger<TLog> : IConsoleLogger<TLog>, ILogger<TLog>
         where TLog : ILog

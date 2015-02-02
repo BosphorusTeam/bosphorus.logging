@@ -1,10 +1,10 @@
 ﻿using Bosphorus.Container.Castle.Registration;
-using Bosphorus.Library.Logging.Core.Facade;
+using Bosphorus.Logging.Core.Facade;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 
-namespace Bosphorus.Library.Logging.Core
+namespace Bosphorus.Logging.Core
 {
     public class Installer: AbstractWindsorInstaller
     {

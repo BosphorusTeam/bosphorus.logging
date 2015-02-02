@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Bosphorus.Logging.Model;
 
-namespace Bosphorus.Library.Logging.Core.Decoration.Thread
+namespace Bosphorus.Logging.Core.Decoration.Thread
 {
     public class ThreadedDecorator<TLog> : ILogger<TLog> 
         where TLog : ILog

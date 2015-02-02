@@ -3,13 +3,13 @@ using System.Threading;
 using Bosphorus.BootStapper.Common;
 using Bosphorus.BootStapper.Program;
 using Bosphorus.BootStapper.Runner;
-using Bosphorus.Library.Logging.Console;
-using Bosphorus.Library.Logging.Core;
-using Bosphorus.Library.Logging.Core.Facade;
+using Bosphorus.Logging.Console;
+using Bosphorus.Logging.Core;
+using Bosphorus.Logging.Core.Facade;
 using Bosphorus.Logging.Model;
 using Environment = Bosphorus.BootStapper.Common.Environment;
 
-namespace Bosphorus.Library.Logging.Facade.Demo
+namespace Bosphorus.Logging.Facade.Demo
 {
     public class Program: IProgram
     {

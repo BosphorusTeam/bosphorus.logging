@@ -1,8 +1,8 @@
-﻿using Bosphorus.Library.Logging.Core.Decoration.Filter;
-using Bosphorus.Library.Logging.Core.Decoration.Thread;
+﻿using Bosphorus.Logging.Core.Decoration.Filter;
+using Bosphorus.Logging.Core.Decoration.Thread;
 using Bosphorus.Logging.Model;
 
-namespace Bosphorus.Library.Logging.Core
+namespace Bosphorus.Logging.Core
 {
     public static class ILoggerDecorations
     {

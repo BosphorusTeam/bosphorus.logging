@@ -40,7 +40,6 @@ namespace Bosphorus.Logging.Facade.Demo
             OperationLog operationLog = new OperationLog();
             operationLog.Level = LogLevel.Info;
             operationLog.OperationId = Guid.NewGuid();
-
             logger.Log(operationLog);
 
             Thread.Sleep(3000);

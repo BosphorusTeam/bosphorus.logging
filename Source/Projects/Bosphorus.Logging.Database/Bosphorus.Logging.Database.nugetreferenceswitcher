@@ -1,0 +1,5 @@
+Bosphorus.Common.Clr	../../../../bosphorus.common/Source/Projects/Bosphorus.Common.Clr/Bosphorus.Common.Clr.csproj	../../packages/Bosphorus.Common.Clr.2.0.3.0/lib/net45/Bosphorus.Common.Clr.dll
+Bosphorus.Configuration.Core	../../../../bosphorus.configuration/Source/Projects/Bosphorus.Configuration.Core/Bosphorus.Configuration.Core.csproj	../../packages/Bosphorus.Configuration.Core.2.0.2.0/lib/net45/Bosphorus.Configuration.Core.dll
+Bosphorus.Container.Castle	../../../../bosphorus.container/Source/Projects/Bosphorus.Container.Castle/Bosphorus.Container.Castle.csproj	../../packages/Bosphorus.Container.Castle.2.0.1.0/lib/net45/Bosphorus.Container.Castle.dll
+Bosphorus.Dao.Core	../../../../bosphorus.dao/Source/Projects/Bosphorus.Dao.Core/Bosphorus.Dao.Core.csproj	../../packages/Bosphorus.Dao.Core.2.2.1.0/lib/net45/Bosphorus.Dao.Core.dll
+Bosphorus.Dao.NHibernate	../../../../bosphorus.dao/Source/Projects/Bosphorus.Dao.NHibernate/Bosphorus.Dao.NHibernate.csproj	../../packages/Bosphorus.Dao.NHibernate.2.2.1.0/lib/net45/Bosphorus.Dao.NHibernate.dll

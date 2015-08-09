@@ -2,7 +2,7 @@ using System;
 using System.Threading;
 using Bosphorus.BootStapper.Common;
 using Bosphorus.BootStapper.Program;
-using Bosphorus.BootStapper.Runner;
+using Bosphorus.BootStapper.Runner.Console;
 using Bosphorus.Logging.Console;
 using Bosphorus.Logging.Core;
 using Bosphorus.Logging.Core.Facade;

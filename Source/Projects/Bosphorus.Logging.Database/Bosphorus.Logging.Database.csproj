@@ -30,23 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bosphorus.Common.Clr">
-      <HintPath>..\..\packages\Bosphorus.Common.Clr.2.0.3.0\lib\net45\Bosphorus.Common.Clr.dll</HintPath>
-    </Reference>
-    <Reference Include="Bosphorus.Configuration.Core, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Configuration.Core.2.0.2.0\lib\net45\Bosphorus.Configuration.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Bosphorus.Container.Castle">
-      <HintPath>..\..\packages\Bosphorus.Container.Castle.2.0.1.0\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
-    </Reference>
-    <Reference Include="Bosphorus.Dao.Core, Version=2.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Dao.Core.2.2.1.0\lib\net45\Bosphorus.Dao.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Bosphorus.Dao.NHibernate">
-      <HintPath>..\..\packages\Bosphorus.Dao.NHibernate.2.2.1.0\lib\net45\Bosphorus.Dao.NHibernate.dll</HintPath>
-    </Reference>
     <Reference Include="Castle.Core">
       <HintPath>..\..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
@@ -86,6 +69,26 @@
     <Compile Include="Installer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\bosphorus.common\Source\Projects\Bosphorus.Common.Clr\Bosphorus.Common.Clr.csproj">
+      <Project>{C4455788-2C4A-447F-AD77-1AB63D8B56C1}</Project>
+      <Name>Bosphorus.Common.Clr</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\bosphorus.configuration\Source\Projects\Bosphorus.Configuration.Core\Bosphorus.Configuration.Core.csproj">
+      <Project>{FC5A7B05-6722-4959-988F-6ECB569EB356}</Project>
+      <Name>Bosphorus.Configuration.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\bosphorus.container\Source\Projects\Bosphorus.Container.Castle\Bosphorus.Container.Castle.csproj">
+      <Project>{9B8DBFE7-A90C-40D6-B9C1-B6A9528F8317}</Project>
+      <Name>Bosphorus.Container.Castle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\bosphorus.dao\Source\Projects\Bosphorus.Dao.Core\Bosphorus.Dao.Core.csproj">
+      <Project>{5C3B656E-528C-4988-A31F-EA0AABC82CFB}</Project>
+      <Name>Bosphorus.Dao.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\bosphorus.dao\Source\Projects\Bosphorus.Dao.NHibernate\Bosphorus.Dao.NHibernate.csproj">
+      <Project>{30FB7F75-FF3E-49DF-AFBD-F9037E7C5A80}</Project>
+      <Name>Bosphorus.Dao.NHibernate</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Bosphorus.Logging.Core\Bosphorus.Logging.Core.csproj">
       <Project>{0E43DB14-987E-415D-8CDD-962C40C5AEA7}</Project>
       <Name>Bosphorus.Logging.Core</Name>

@@ -1,24 +1,20 @@
-﻿using System;
-using Bosphorus.Container.Castle.Extra;
-using Bosphorus.Logging.Model;
+﻿using Bosphorus.Logging.Model;
+using Castle.Windsor;
 
 namespace Bosphorus.Logging.Core.Facade
 {
     public class Logger
     {
-        private readonly IServiceRegistry serviceRegistry;
+        private readonly IWindsorContainer container;
 
-        public Logger(IServiceRegistry serviceRegistry)
+        public Logger(IWindsorContainer container)
         {
-            this.serviceRegistry = serviceRegistry;
+            this.container = container;
         }
 
         public void Log<TLog>(TLog log) where TLog : ILog
         {
-            Type loggerType = typeof (ILogger<TLog>);
-            object instance = serviceRegistry.Get(loggerType);
-
-            ILogger<TLog> logger = (ILogger<TLog>) instance;
+            ILogger<TLog> logger = container.Resolve<ILogger<TLog>>();
             logger.Log(log);
         }
     }

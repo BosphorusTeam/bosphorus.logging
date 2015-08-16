@@ -68,30 +68,31 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+      <HintPath>..\..\..\..\bosphorus\Source\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Castle.Windsor, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+      <HintPath>..\..\..\..\bosphorus\Source\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Decoration.Exception\ExceptionDecorator.cs" />
-    <Compile Include="Decoration.Exception\LoggerFailedException.cs" />
-    <Compile Include="Decoration.Filter\ILogFilter.cs" />
-    <Compile Include="Decoration.Filter\LogFilterDecorator.cs" />
-    <Compile Include="Decoration.Thread\ThreadedDecorator.cs" />
-    <Compile Include="NullLogger.cs" />
+    <Compile Include="Logger\AbstractLogger.cs" />
+    <Compile Include="Logger\Decoration.Exception\ExceptionDecorator.cs" />
+    <Compile Include="Logger\Decoration.Exception\LoggerFailedException.cs" />
+    <Compile Include="Logger\Decoration.Filter\ILogFilter.cs" />
+    <Compile Include="Logger\Decoration.Filter\LogFilterDecorator.cs" />
+    <Compile Include="Logger\Decoration.Thread\ThreadedDecorator.cs" />
+    <Compile Include="Logger\NullLogger.cs" />
     <Compile Include="DecorationInstaller.cs" />
-    <Compile Include="ILoggerExtensions.cs" />
-    <Compile Include="ILogger.cs" />
+    <Compile Include="Logger\Extensions.cs" />
+    <Compile Include="Logger\ILogger.cs" />
     <Compile Include="Installer.cs" />
-    <Compile Include="ILoggerDecorations.cs" />
-    <Compile Include="Facade\Logger.cs" />
+    <Compile Include="Logger\Decorations.cs" />
+    <Compile Include="Logger\GenericLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

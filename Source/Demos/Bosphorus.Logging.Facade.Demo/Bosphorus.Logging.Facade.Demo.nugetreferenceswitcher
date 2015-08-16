@@ -1,7 +1,0 @@
-Bosphorus.BootStapper	../../../../bosphorus.bootstrapper/Source/Projects/Bosphorus.BootStapper/Bosphorus.BootStapper.csproj	../../packages/Bosphorus.BootStapper.2.0.2.0/lib/net45/Bosphorus.BootStapper.dll
-Bosphorus.Common.Clr	../../../../bosphorus.common/Source/Projects/Bosphorus.Common.Clr/Bosphorus.Common.Clr.csproj	../../packages/Bosphorus.Common.Clr.2.0.3.0/lib/net45/Bosphorus.Common.Clr.dll
-Bosphorus.Configuration.Default	../../../../bosphorus.configuration/Source/Projects/Bosphorus.Configuration.Default/Bosphorus.Configuration.Default.csproj	../../packages/Bosphorus.Configuration.Default.2.0.2.0/lib/net45/Bosphorus.Configuration.Default.dll
-Bosphorus.Container.Castle	../../../../bosphorus.container/Source/Projects/Bosphorus.Container.Castle/Bosphorus.Container.Castle.csproj	../../packages/Bosphorus.Container.Castle.2.0.1.0/lib/net45/Bosphorus.Container.Castle.dll
-Bosphorus.Dao.Core	../../../../bosphorus.dao/Source/Projects/Bosphorus.Dao.Core/Bosphorus.Dao.Core.csproj	../../packages/Bosphorus.Dao.Core.2.2.1.0/lib/net45/Bosphorus.Dao.Core.dll
-Bosphorus.Dao.Lucene	../../../../bosphorus.dao/Source/Projects/Bosphorus.Dao.Lucene/Bosphorus.Dao.Lucene.csproj	../../packages/Bosphorus.Dao.Lucene.2.2.1.0/lib/net45/Bosphorus.Dao.Lucene.dll
-Bosphorus.Dao.NHibernate	../../../../bosphorus.dao/Source/Projects/Bosphorus.Dao.NHibernate/Bosphorus.Dao.NHibernate.csproj	../../packages/Bosphorus.Dao.NHibernate.2.2.1.0/lib/net45/Bosphorus.Dao.NHibernate.dll

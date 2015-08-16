@@ -1,22 +1,22 @@
 using System;
 using System.Threading;
-using Bosphorus.BootStapper.Common;
-using Bosphorus.BootStapper.Program;
 using Bosphorus.BootStapper.Runner.Console;
+using Bosphorus.Common.Core.Application;
 using Bosphorus.Logging.Console;
+using Bosphorus.Logging.Console.Logger;
 using Bosphorus.Logging.Core;
-using Bosphorus.Logging.Core.Facade;
+using Bosphorus.Logging.Core.Logger;
 using Bosphorus.Logging.Model;
-using Environment = Bosphorus.BootStapper.Common.Environment;
+using Environment = Bosphorus.Common.Core.Application.Environment;
 
 namespace Bosphorus.Logging.Facade.Demo
 {
     public class Program: IProgram
     {
-        private readonly Logger logger;
+        private readonly GenericLogger logger;
         private readonly IConsoleLogger<OperationLog> consoleLogger;
 
-        public Program(Logger logger, IConsoleLogger<OperationLog> consoleLogger)
+        public Program(GenericLogger logger, IConsoleLogger<OperationLog> consoleLogger)
         {
             this.logger = logger;
             this.consoleLogger = consoleLogger;

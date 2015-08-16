@@ -1,6 +1,8 @@
-﻿using Bosphorus.Container.Castle.Fluent.Decoration;
-using Bosphorus.Container.Castle.Registration;
-using Bosphorus.Logging.Core.Decoration.Exception;
+﻿using Bosphorus.Container.Castle.Registration;
+using Bosphorus.Container.Castle.Registration.Fluent.Decoration;
+using Bosphorus.Container.Castle.Registration.Installer;
+using Bosphorus.Logging.Core.Logger;
+using Bosphorus.Logging.Core.Logger.Decoration.Exception;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;

@@ -70,10 +70,6 @@
       <Project>{5C3B656E-528C-4988-A31F-EA0AABC82CFB}</Project>
       <Name>Bosphorus.Dao.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\bosphorus.dao\Source\Projects\Bosphorus.Dao.NHibernate\Bosphorus.Dao.NHibernate.csproj">
-      <Project>{30FB7F75-FF3E-49DF-AFBD-F9037E7C5A80}</Project>
-      <Name>Bosphorus.Dao.NHibernate</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Bosphorus.Logging.Core\Bosphorus.Logging.Core.csproj">
       <Project>{0E43DB14-987E-415D-8CDD-962C40C5AEA7}</Project>
       <Name>Bosphorus.Logging.Core</Name>

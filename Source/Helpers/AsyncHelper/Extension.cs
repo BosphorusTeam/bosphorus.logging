@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Bosphorus.Logging.Core;
+using Bosphorus.Logging.Core.Logger;
 using Bosphorus.Logging.Model;
 
 namespace AsyncHelper

@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Bosphorus.BootStapper.Common;
-using Bosphorus.BootStapper.Program;
-using Bosphorus.BootStapper.Runner;
-using Bosphorus.Logging.Core;
+using Bosphorus.Assemble.BootStrapper.Runner.Console;
+using Bosphorus.Common.Application;
+using Bosphorus.Logging.Core.Logger;
 using Bosphorus.Logging.Model;
-using Environment = Bosphorus.BootStapper.Common.Environment;
+using Environment = Bosphorus.Common.Application.Environment;
 
 namespace AsyncHelper
 {

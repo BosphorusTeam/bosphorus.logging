@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{ECB4138B-CDDD-4E03-8238-422E8540F2C4}"
 EndProject
@@ -11,15 +11,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bosphorus.Logging.Core", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bosphorus.Logging.Console", "Projects\Bosphorus.Logging.Console\Bosphorus.Logging.Console.csproj", "{CAC6B8C3-9DFA-46EB-B425-9840760F1368}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bosphorus.Logging.Facade.Demo", "Demos\Bosphorus.Logging.Facade.Demo\Bosphorus.Logging.Facade.Demo.csproj", "{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bosphorus.Logging.Database", "Projects\Bosphorus.Logging.Database\Bosphorus.Logging.Database.csproj", "{4C03E0F8-EEED-4E6D-AE66-E7BEF449C703}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bosphorus.Logging.Model", "Projects\Bosphorus.Logging.Model\Bosphorus.Logging.Model.csproj", "{67E3D2FD-AFE7-4963-B0FE-F5E576C8B286}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{0D997C52-FF05-4F7F-A699-9DAE5DE74403}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncHelper", "Helpers\AsyncHelper\AsyncHelper.csproj", "{91846787-06CB-4656-ABBE-B2DB97842F3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bosphorus.Logging.Console.Demo", "Demos\Bosphorus.Logging.Console.Demo\Bosphorus.Logging.Console.Demo.csproj", "{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,30 +38,24 @@ Global
 		{CAC6B8C3-9DFA-46EB-B425-9840760F1368}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
 		{CAC6B8C3-9DFA-46EB-B425-9840760F1368}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAC6B8C3-9DFA-46EB-B425-9840760F1368}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7}.Deploy|Any CPU.ActiveCfg = Deploy|Any CPU
-		{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
-		{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4C03E0F8-EEED-4E6D-AE66-E7BEF449C703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4C03E0F8-EEED-4E6D-AE66-E7BEF449C703}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C03E0F8-EEED-4E6D-AE66-E7BEF449C703}.Deploy|Any CPU.ActiveCfg = Debug|Any CPU
 		{4C03E0F8-EEED-4E6D-AE66-E7BEF449C703}.Deploy|Any CPU.Build.0 = Debug|Any CPU
 		{4C03E0F8-EEED-4E6D-AE66-E7BEF449C703}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C03E0F8-EEED-4E6D-AE66-E7BEF449C703}.Release|Any CPU.Build.0 = Release|Any CPU
-		{67E3D2FD-AFE7-4963-B0FE-F5E576C8B286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{67E3D2FD-AFE7-4963-B0FE-F5E576C8B286}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{67E3D2FD-AFE7-4963-B0FE-F5E576C8B286}.Deploy|Any CPU.ActiveCfg = Debug|Any CPU
-		{67E3D2FD-AFE7-4963-B0FE-F5E576C8B286}.Deploy|Any CPU.Build.0 = Debug|Any CPU
-		{67E3D2FD-AFE7-4963-B0FE-F5E576C8B286}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{67E3D2FD-AFE7-4963-B0FE-F5E576C8B286}.Release|Any CPU.Build.0 = Release|Any CPU
 		{91846787-06CB-4656-ABBE-B2DB97842F3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{91846787-06CB-4656-ABBE-B2DB97842F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91846787-06CB-4656-ABBE-B2DB97842F3F}.Deploy|Any CPU.ActiveCfg = Debug|Any CPU
 		{91846787-06CB-4656-ABBE-B2DB97842F3F}.Deploy|Any CPU.Build.0 = Debug|Any CPU
 		{91846787-06CB-4656-ABBE-B2DB97842F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91846787-06CB-4656-ABBE-B2DB97842F3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7}.Deploy|Any CPU.ActiveCfg = Deploy|Any CPU
+		{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
+		{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,9 +63,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{0E43DB14-987E-415D-8CDD-962C40C5AEA7} = {ECB4138B-CDDD-4E03-8238-422E8540F2C4}
 		{CAC6B8C3-9DFA-46EB-B425-9840760F1368} = {ECB4138B-CDDD-4E03-8238-422E8540F2C4}
-		{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7} = {CF051348-33B4-4A4C-8C66-5BAF7DA5097B}
 		{4C03E0F8-EEED-4E6D-AE66-E7BEF449C703} = {ECB4138B-CDDD-4E03-8238-422E8540F2C4}
-		{67E3D2FD-AFE7-4963-B0FE-F5E576C8B286} = {ECB4138B-CDDD-4E03-8238-422E8540F2C4}
 		{91846787-06CB-4656-ABBE-B2DB97842F3F} = {0D997C52-FF05-4F7F-A699-9DAE5DE74403}
+		{C3EFC2D9-1579-4CDF-B59F-EFA6DC5A7AA7} = {CF051348-33B4-4A4C-8C66-5BAF7DA5097B}
 	EndGlobalSection
 EndGlobal

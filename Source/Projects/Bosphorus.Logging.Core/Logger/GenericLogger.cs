@@ -1,4 +1,5 @@
-﻿using Bosphorus.Logging.Model;
+﻿using System.Collections.Generic;
+using Bosphorus.Logging.Model;
 using Castle.Windsor;
 
 namespace Bosphorus.Logging.Core.Logger
@@ -12,10 +13,18 @@ namespace Bosphorus.Logging.Core.Logger
             this.container = container;
         }
 
-        public void Log<TLog>(TLog log) where TLog : ILog
+        public void Log<TLog>(TLog log) 
+            where TLog : ILog
         {
             ILogger<TLog> logger = container.Resolve<ILogger<TLog>>();
             logger.Log(log);
+        }
+
+        public void Log<TLog>(IEnumerable<TLog> logs) 
+            where TLog : ILog
+        {
+            ILogger<TLog> logger = container.Resolve<ILogger<TLog>>();
+            logger.Log(logs);
         }
     }
 }

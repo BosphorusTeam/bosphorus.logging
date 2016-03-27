@@ -1,13 +1,13 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
-using Bosphorus.BootStapper.Runner.Console;
-using Bosphorus.Common.Core.Application;
-using Bosphorus.Logging.Console;
+using Bosphorus.Assemble.BootStrapper.Runner.Console;
+using Bosphorus.Common.Application;
 using Bosphorus.Logging.Console.Logger;
-using Bosphorus.Logging.Core;
 using Bosphorus.Logging.Core.Logger;
 using Bosphorus.Logging.Model;
-using Environment = Bosphorus.Common.Core.Application.Environment;
+using Environment = Bosphorus.Common.Application.Environment;
 
 namespace Bosphorus.Logging.Facade.Demo
 {
@@ -24,25 +24,34 @@ namespace Bosphorus.Logging.Facade.Demo
 
         static void Main(string[] args)
         {
-            ConsoleRunner.Run<Program>(Environment.Local, Perspective.Debug, args);
+            ConsoleRunner.Run<Program>(Environment.Local, Perspective.Debug, args, typeof(IDemoInstaller));
         }
 
         public void Run(string[] args)
         {
             consoleLogger.Debug("Console logger message");
 
-            MyLog log = new MyLog();
-            log.Level = LogLevel.Warn;
-            log.Message = "Deneme";
-            log.Temp = "Temp 2";
-            logger.Log(log);
+            var myLog = BuildMyLog(0);
+            logger.Log(myLog);
+
+            var myLogs = Enumerable.Range(0, 100).Select(BuildMyLog);
+            logger.Log(myLogs);
 
             OperationLog operationLog = new OperationLog();
             operationLog.Level = LogLevel.Info;
             operationLog.OperationId = Guid.NewGuid();
             logger.Log(operationLog);
 
-            Thread.Sleep(3000);
+            Thread.Sleep(30000);
+        }
+
+        private static MyLog BuildMyLog(int index)
+        {
+            MyLog log = new MyLog();
+            log.Level = LogLevel.Warn;
+            log.Message = "Deneme";
+            log.Temp = "Temp " + index;
+            return log;
         }
     }
 }
